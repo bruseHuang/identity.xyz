@@ -1,1 +1,6 @@
-<h1>Identity</h1>
+<div class="main bg-primary" [ngClass]="['theme-' + theme]">
+  <app-nav-left></app-nav-left>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

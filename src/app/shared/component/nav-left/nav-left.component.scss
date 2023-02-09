@@ -1,0 +1,35 @@
+.nav-left {
+  width: 88px;
+  height: 100%;
+  display: block;
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    padding-top: 20px;
+    a {
+      width: 80px;
+      margin: -2px auto 14px;
+      padding: 2px;
+      cursor: pointer;
+      .icon {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 32px;
+        margin-right: auto;
+        margin-bottom: 4px;
+        margin-left: auto;
+        font-variation-settings: 'wght' 400, 'opsz' 24;
+        transition: font-variation-settings 200ms cubic-bezier(0.2, 0, 0, 1);
+        border-radius: 16px;
+      }
+      .label {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}

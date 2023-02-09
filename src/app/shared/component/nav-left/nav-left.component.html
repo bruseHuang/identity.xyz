@@ -1,0 +1,41 @@
+<section class="nav-left bg-accent">
+  <nav>
+    <a
+      routerLink="/"
+      (mouseenter)="navHoverIndex = 0"
+      (mouseleave)="navHoverIndex = -1">
+      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 0 }">
+        <mat-icon class="temp">other_houses</mat-icon>
+      </span>
+      <p class="label">Home</p>
+    </a>
+    <a
+      routerLink="/"
+      (mouseenter)="navHoverIndex = 1"
+      (mouseleave)="navHoverIndex = -1">
+      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 1 }">
+        <mat-icon class="temp">apps</mat-icon>
+      </span>
+      <p class="label">Get stared</p>
+    </a>
+    <a
+      routerLink="/"
+      (mouseenter)="navHoverIndex = 2"
+      (mouseleave)="navHoverIndex = -1">
+      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 2 }">
+        <mat-icon class="temp">code</mat-icon>
+      </span>
+      <p class="label">Develop</p>
+    </a>
+    <a
+      routerLink="/"
+      (mouseenter)="navHoverIndex = 3"
+      (mouseleave)="navHoverIndex = -1">
+      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 3 }">
+        <mat-icon>group_work</mat-icon>
+      </span>
+      <p class="label">Team</p>
+    </a>
+  </nav>
+  <div class="theme"></div>
+</section>
