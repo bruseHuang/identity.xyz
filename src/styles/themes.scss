@@ -18,16 +18,22 @@ $theme: mat.define-light-theme(
 
 .theme-dark {
   @include mat.all-component-themes($theme);
-  &.bg-primary {
-    background-color: $dark-primary-bg;
+  &.bg-app {
+    background-color: $dark-app-bg;
   }
-  .bg-primary {
-    background-color: $dark-primary-bg;
+  .bg-app {
+    background-color: $dark-app-bg;
   }
   .bg-accent {
     background-color: $dark-accent-bg;
   }
   .bg-accent-hover {
     background-color: $dark-accent-bg-hover;
+  }
+  .bg-primary {
+    background-color: $dark-primary-color;
+  }
+  .font-active {
+    color: $dark-font-active;
   }
 }

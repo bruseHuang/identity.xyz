@@ -4,37 +4,59 @@
       routerLink="/"
       (mouseenter)="navHoverIndex = 0"
       (mouseleave)="navHoverIndex = -1">
-      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 0 }">
-        <mat-icon class="temp">other_houses</mat-icon>
+      <span
+        class="icon"
+        [ngClass]="{
+          'bg-accent-hover': navHoverIndex === 0,
+          'bg-primary': navIndex === 0
+        }">
+        <img src="assets/images/app/logo-white.svg" alt="" />
       </span>
-      <p class="label">Home</p>
+      <p class="label" [ngClass]="{ 'font-active': navIndex === 0 }">Home</p>
     </a>
     <a
       routerLink="/"
       (mouseenter)="navHoverIndex = 1"
       (mouseleave)="navHoverIndex = -1">
-      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 1 }">
+      <span
+        class="icon"
+        [ngClass]="{
+          'bg-accent-hover': navHoverIndex === 1,
+          'bg-primary': navIndex === 1
+        }">
         <mat-icon class="temp">apps</mat-icon>
       </span>
-      <p class="label">Get stared</p>
+      <p class="label" [ngClass]="{ 'font-active': navIndex === 1 }">
+        Get stared
+      </p>
     </a>
     <a
       routerLink="/"
       (mouseenter)="navHoverIndex = 2"
       (mouseleave)="navHoverIndex = -1">
-      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 2 }">
+      <span
+        class="icon"
+        [ngClass]="{
+          'bg-accent-hover': navHoverIndex === 2,
+          'bg-primary': navIndex === 2
+        }">
         <mat-icon class="temp">code</mat-icon>
       </span>
-      <p class="label">Develop</p>
+      <p class="label" [ngClass]="{ 'font-active': navIndex === 2 }">Develop</p>
     </a>
     <a
       routerLink="/"
       (mouseenter)="navHoverIndex = 3"
       (mouseleave)="navHoverIndex = -1">
-      <span class="icon" [ngClass]="{ 'bg-accent-hover': navHoverIndex === 3 }">
+      <span
+        class="icon"
+        [ngClass]="{
+          'bg-accent-hover': navHoverIndex === 3,
+          'bg-primary': navIndex === 3
+        }">
         <mat-icon>group_work</mat-icon>
       </span>
-      <p class="label">Team</p>
+      <p class="label" [ngClass]="{ 'font-active': navIndex === 3 }">Team</p>
     </a>
   </nav>
   <div class="theme"></div>
