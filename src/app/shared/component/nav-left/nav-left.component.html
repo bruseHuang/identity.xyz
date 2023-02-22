@@ -2,62 +2,71 @@
   <nav>
     <a
       routerLink="/"
+      routerLinkActive
+      #home="routerLinkActive"
+      [routerLinkActiveOptions]="{ exact: true }"
       (mouseenter)="navHoverIndex = 0"
       (mouseleave)="navHoverIndex = -1">
       <span
         class="icon"
         [ngClass]="{
           'bg-accent-hover': navHoverIndex === 0,
-          'bg-primary': navIndex === 0
+          'bg-primary': home.isActive
         }">
         <img src="assets/images/app/logo-white.svg" alt="" />
       </span>
-      <p class="label" [ngClass]="{ 'font-active': navIndex === 0 }">Home</p>
+      <p class="label" [ngClass]="{ 'font-active': home.isActive }">Home</p>
     </a>
     <a
-      routerLink="/"
+      routerLink="/start"
+      routerLinkActive
+      #start="routerLinkActive"
       (mouseenter)="navHoverIndex = 1"
       (mouseleave)="navHoverIndex = -1">
       <span
         class="icon"
         [ngClass]="{
           'bg-accent-hover': navHoverIndex === 1,
-          'bg-primary': navIndex === 1
+          'bg-primary': start.isActive
         }">
         <mat-icon class="temp">apps</mat-icon>
       </span>
-      <p class="label" [ngClass]="{ 'font-active': navIndex === 1 }">
+      <p class="label" [ngClass]="{ 'font-active': start.isActive }">
         Get stared
       </p>
     </a>
-    <a
+    <!-- <a
       routerLink="/"
+      routerLinkActive
+      #dev="routerLinkActive"
       (mouseenter)="navHoverIndex = 2"
       (mouseleave)="navHoverIndex = -1">
       <span
         class="icon"
         [ngClass]="{
           'bg-accent-hover': navHoverIndex === 2,
-          'bg-primary': navIndex === 2
+          'bg-primary': dev.isActive
         }">
         <mat-icon class="temp">code</mat-icon>
       </span>
-      <p class="label" [ngClass]="{ 'font-active': navIndex === 2 }">Develop</p>
+      <p class="label" [ngClass]="{ 'font-active': dev.isActive }">Develop</p>
     </a>
     <a
       routerLink="/"
+      routerLinkActive
+      #team="routerLinkActive"
       (mouseenter)="navHoverIndex = 3"
       (mouseleave)="navHoverIndex = -1">
       <span
         class="icon"
         [ngClass]="{
           'bg-accent-hover': navHoverIndex === 3,
-          'bg-primary': navIndex === 3
+          'bg-primary': team.isActive
         }">
         <mat-icon>group_work</mat-icon>
       </span>
-      <p class="label" [ngClass]="{ 'font-active': navIndex === 3 }">Team</p>
-    </a>
+      <p class="label" [ngClass]="{ 'font-active': team.isActive }">Team</p>
+    </a> -->
   </nav>
   <div class="theme"></div>
 </section>

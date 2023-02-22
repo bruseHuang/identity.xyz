@@ -7,6 +7,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavLeftComponent {
   navHoverIndex = -1;
-  navIndex = 0;
   constructor() {}
 }

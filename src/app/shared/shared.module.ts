@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { RouterModule } from '@angular/router';
 
 const COMPONENTS = [NavLeftComponent, BottomComponent];
 const PIPES = [TranslatePipe, SafeHtmlPipe];
@@ -20,7 +21,13 @@ const THIRD_MODULES = [
 
 @NgModule({
   declarations: [...PIPES, ...COMPONENTS],
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ...THIRD_MODULES],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
+    ...THIRD_MODULES,
+  ],
   exports: [
     CommonModule,
     FormsModule,
