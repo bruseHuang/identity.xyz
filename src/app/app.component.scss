@@ -5,6 +5,7 @@
   height: 100%;
   display: flex;
   .main-content {
-    padding-left: $left-nav;
+    padding: 8px 8px 0;
+    width: 100%;
   }
 }
