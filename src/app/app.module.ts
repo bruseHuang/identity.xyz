@@ -6,9 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { HomeComponent, StartComponent } from './pages';
+import { HomeComponent, StartComponent, DevelopComponent } from './pages';
 
-const PAGECOMPONENTS = [HomeComponent, StartComponent];
+const PAGECOMPONENTS = [HomeComponent, StartComponent, DevelopComponent];
 
 @NgModule({
   declarations: [AppComponent, ...PAGECOMPONENTS],

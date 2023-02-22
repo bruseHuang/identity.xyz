@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent, StartComponent } from './pages';
+import { DevelopComponent, HomeComponent, StartComponent } from './pages';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'start', component: StartComponent },
+  { path: 'dev', component: DevelopComponent },
   { path: '**', redirectTo: '/' },
 ];
 @NgModule({
